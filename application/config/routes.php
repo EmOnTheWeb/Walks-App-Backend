@@ -54,3 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['list-walks'] = 'gpxfiles/listWalks'; 
+$route['get-directions/(:any)'] = 'gpxfiles/getDirections/$1'; 

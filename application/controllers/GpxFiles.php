@@ -17,4 +17,14 @@ class GpxFiles extends CI_Controller {
 		}
 		echo json_encode($filelist); 
 	}
+
+	public function getDirections($filename) {
+		//add back extension
+		$filename .= '.gpx'; 
+		$filepath = "./gpx_files/".$filename; 
+		$fileContents = file_get_contents($filepath); 
+		//parse file contents
+		$xml = simplexml_load_string($fileContents);
+		var_dump($xml->rte); 
+	}
 }
