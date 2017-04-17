@@ -15,7 +15,7 @@ class GpxFiles extends CI_Controller {
 		foreach($iterator as $entry) {
 		        $filelist[] = $entry->getFilename();
 		}
-		echo json_encode($filelist); 
+		print_r(json_encode($filelist)); 
 	}
 
 	public function getDirections($filename) {
@@ -48,9 +48,8 @@ class GpxFiles extends CI_Controller {
 	    	CURLOPT_URL => $mapboxRequestUrl
 		));
 		
-		$response = curl_exec($curl); 
+		$response = json_decode(curl_exec($curl)); 
 		curl_close($curl);
-      	 var_dump($response); 
-		
+		print_r($response); //send me off	
 	}
 }
