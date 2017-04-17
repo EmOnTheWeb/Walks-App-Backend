@@ -25,6 +25,32 @@ class GpxFiles extends CI_Controller {
 		$fileContents = file_get_contents($filepath); 
 		//parse file contents
 		$xml = simplexml_load_string($fileContents);
-		var_dump($xml->rte); 
+		$coordinates = $xml->rte->rtept; 
+
+		//build coordinates string for api 
+		$coordinatesString=''; 
+
+		$i=0; 
+		foreach($coordinates as $coordinate) {
+			$coordinatesString .= $coordinate['lon'].','.$coordinate['lat']; 
+			if($i !== sizeof($coordinates)-1) {
+				$coordinatesString .= ';'; 
+			}
+			$i++; 
+		}
+
+		$mapboxRequestUrl = "https://api.mapbox.com/directions/v5/mapbox/walking/".$coordinatesString."?steps=true&access_token=pk.eyJ1IjoiZW1pbGllZGFubmVuYmVyZyIsImEiOiJjaXhmOTB6ZnowMDAwMnVzaDVkcnpsY2M1In0.33yDwUq670jHD8flKjzqxg"; 
+
+		$curl = curl_init();
+		
+		curl_setopt_array($curl, array(
+	    	CURLOPT_RETURNTRANSFER => 1,
+	    	CURLOPT_URL => $mapboxRequestUrl
+		));
+		
+		$response = curl_exec($curl); 
+		curl_close($curl);
+      	 var_dump($response); 
+		
 	}
 }
