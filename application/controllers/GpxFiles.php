@@ -13,7 +13,9 @@ class GpxFiles extends CI_Controller {
 		$iterator = new FilesystemIterator("./gpx_files");
 		$filelist = array();
 		foreach($iterator as $entry) {
-		        $filelist[] = $entry->getFilename();
+			if($entry->getFilename() !== '.DS_Store') {
+	        	$filelist[] = $entry->getFilename();
+			}
 		}
 		print_r(json_encode($filelist)); 
 	}
