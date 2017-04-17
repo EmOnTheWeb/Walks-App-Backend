@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <gpx version="1.1" creator="http://www.geoplaner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 <rte>
-<name>Route1</name>
+<name>Grove end road</name>
 <rtept lat="51.53162" lon="-0.16839">
 <ele>41.1</ele>
 <name>WP01-A</name>
@@ -9,6 +9,10 @@
 <rtept lat="51.53447" lon="-0.17409">
 <ele>49.6</ele>
 <name>WP02-B</name>
+</rtept>
+<rtept lat="51.53274" lon="-0.17646">
+<ele>44.5</ele>
+<name>WP03-C</name>
 </rtept>
 </rte>
 </gpx>

@@ -48,7 +48,7 @@ class GpxFiles extends CI_Controller {
 	    	CURLOPT_URL => $mapboxRequestUrl
 		));
 		
-		$response = json_decode(curl_exec($curl)); 
+		$response = curl_exec($curl); 
 		curl_close($curl);
 		print_r($response); //send me off	
 	}
