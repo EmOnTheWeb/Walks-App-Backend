@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="http://www.geoplaner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<rte>
+<name>Lambeth</name>
+<rtept lat="51.49891" lon="-0.11207">
+<ele>3.3</ele>
+<name>WP01-A</name>
+</rtept>
+<rtept lat="51.49987" lon="-0.11441">
+<ele>5.6</ele>
+<name>WP02-B</name>
+</rtept>
+<rtept lat="51.5008" lon="-0.11594">
+<ele>5.3</ele>
+<name>WP03-C</name>
+</rtept>
+<rtept lat="51.50046" lon="-0.11688">
+<ele>5.8</ele>
+<name>WP04-D</name>
+</rtept>
+<rtept lat="51.50088" lon="-0.12197">
+<ele>0</ele>
+<name>WP05-E</name>
+</rtept>
+</rte>
+</gpx>
