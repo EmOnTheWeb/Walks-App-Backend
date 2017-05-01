@@ -54,4 +54,12 @@ class GpxFiles extends CI_Controller {
 		curl_close($curl);
 		print_r($response); //send me off	
 	}
+
+	public function getLandmarks($walkName) {
+		$walkName .= '.txt'; 
+		$filepath = "./landmark_descriptions/".$walkName; 
+		$fileContents = file_get_contents($filepath); 
+
+		print_r($fileContents); 	
+	}
 }
