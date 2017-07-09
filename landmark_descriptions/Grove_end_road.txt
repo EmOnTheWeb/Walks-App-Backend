@@ -1,3 +1,3 @@
-1 see the street
-2 see the tube
-3 see grove end road
+see the street
+see the tube
+see grove end road
