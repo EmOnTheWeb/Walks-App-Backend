@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class GpxFiles extends CI_Controller {
+class Gpxfiles extends CI_Controller {
 
 	public function index()
 	{
