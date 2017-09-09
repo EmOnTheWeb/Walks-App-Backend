@@ -1,2 +1,1 @@
-Waypoint 1,blah blah blah,51.53162 -0.16839;
-Waypoint 2,second blah blah,51.53447 -0.17409;
+Waypoint 1,blah blah blah,51.53162 -0.16839;Waypoint 2,second blah blah,51.53447 -0.17409;

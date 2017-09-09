@@ -52,15 +52,19 @@ class Gpxfiles extends CI_Controller {
 		foreach($landmarks as $landmark) {
 			if($landmark) {
 				$parts = explode(',',$landmark); 
+				
 				$landmarkNameDescription[$parts[0]] = $parts[1]; 
 				$landmarkCoordinates[] = $parts[2]; 
 			}
 		}
 
-		$walkDetails['name-desc-landmarks'] = json_encode($landmarkNameDescription);  
-		$walkDetails['landmark-coordinates'] = json_encode($landmarkCoordinates); 
+		$data = array(
+			'plot-coordinates' => $coordinateArray, 
+			'name-desc-landmarks' => $landmarkNameDescription, 
+			'landmark-coordinates' => $landmarkCoordinates
+		); 
 		
-		print_r(json_encode($walkDetails)); 
+		print_r(json_encode($data)); 
 	}
 
 	// public function getDirections($filename) {
