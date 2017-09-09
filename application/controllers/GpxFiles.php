@@ -37,6 +37,8 @@ class Gpxfiles extends CI_Controller {
 		foreach($coordinates as $coordinate) {
 			$coordinateArray[] = $coordinate['lon'].','.$coordinate['lat']; 	 
 		}
+		//for use for plotting line on map
+		$walkDetails['plot-coordinates'] = json_encode($coordinateArray); 
 
 		//get landmark coordinates / name / description
 		$landmarkfilename = $filename.'.txt'; 
@@ -57,9 +59,9 @@ class Gpxfiles extends CI_Controller {
 		}
 
 		$data = array(
-			'plot' => $coordinateArray, 
-			'landmarks' => $landmarkNameDescription, 
-			'landmarkcoordinates' => $landmarkCoordinates
+			'plot-coordinates' => $coordinateArray, 
+			'name-desc-landmarks' => $landmarkNameDescription, 
+			'landmark-coordinates' => $landmarkCoordinates
 		); 
 		
 		print_r(json_encode($data)); 
