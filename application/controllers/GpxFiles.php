@@ -20,83 +20,40 @@ class Gpxfiles extends CI_Controller {
 		print_r(json_encode($filelist)); 
 	}
 
-	public function getWalkDetails($filename) {
-		
+	public function getDirections($filename) {
 		//add back extension
-		$gpxfilename = $filename.'.gpx'; 
-		$filepath = "./gpx_files/".$gpxfilename; 
+		$filename .= '.gpx'; 
+		$filepath = "./gpx_files/".$filename; 
 		$fileContents = file_get_contents($filepath); 
 		//parse file contents
 		$xml = simplexml_load_string($fileContents);
 		$coordinates = $xml->rte->rtept; 
 
-		//just return array of coordinates
-		$coordinateArray=[]; 
+		//build coordinates string for api 
+		$coordinatesString=''; 
 
 		$i=0; 
 		foreach($coordinates as $coordinate) {
-			$coordinateArray[] = $coordinate['lon'].','.$coordinate['lat']; 	 
-		}
-		//for use for plotting line on map
-		$walkDetails['plot-coordinates'] = json_encode($coordinateArray); 
-
-		//get landmark coordinates / name / description
-		$landmarkfilename = $filename.'.txt'; 
-		$filepath = "./landmark_descriptions/".$landmarkfilename; 
-		$fileContents = trim(file_get_contents($filepath));
-
-		$landmarks = explode(';',$fileContents); 
-		$landmarkNameDescription=[];
-		$landmarkCoordinates=[];  
-
-		foreach($landmarks as $landmark) {
-			if($landmark) {
-				$parts = explode(',',$landmark); 
-				$landmarkNameDescription[$parts[0]] = $parts[1]; 
-				$landmarkCoordinates[] = $parts[2]; 
+			$coordinatesString .= $coordinate['lon'].','.$coordinate['lat']; 
+			if($i !== sizeof($coordinates)-1) {
+				$coordinatesString .= ';'; 
 			}
+			$i++; 
 		}
 
-		$walkDetails['name-desc-landmarks'] = json_encode($landmarkNameDescription);  
-		$walkDetails['landmark-coordinates'] = json_encode($landmarkCoordinates); 
+		$mapboxRequestUrl = "https://api.mapbox.com/directions/v5/mapbox/walking/".$coordinatesString."?steps=true&access_token=pk.eyJ1IjoiZW1pbGllZGFubmVuYmVyZyIsImEiOiJjaXhmOTB6ZnowMDAwMnVzaDVkcnpsY2M1In0.33yDwUq670jHD8flKjzqxg"; 
+
+		$curl = curl_init();
 		
-		print_r(json_encode($walkDetails)); 
+		curl_setopt_array($curl, array(
+	    	CURLOPT_RETURNTRANSFER => 1,
+	    	CURLOPT_URL => $mapboxRequestUrl
+		));
+		
+		$response = curl_exec($curl); 
+		curl_close($curl);
+		print_r($response); //send me off	
 	}
-
-	// public function getDirections($filename) {
-	// 	//add back extension
-	// 	$filename .= '.gpx'; 
-	// 	$filepath = "./gpx_files/".$filename; 
-	// 	$fileContents = file_get_contents($filepath); 
-	// 	//parse file contents
-	// 	$xml = simplexml_load_string($fileContents);
-	// 	$coordinates = $xml->rte->rtept; 
-
-	// 	//build coordinates string for api 
-	// 	$coordinatesString=''; 
-
-	// 	$i=0; 
-	// 	foreach($coordinates as $coordinate) {
-	// 		$coordinatesString .= $coordinate['lon'].','.$coordinate['lat']; 
-	// 		if($i !== sizeof($coordinates)-1) {
-	// 			$coordinatesString .= ';'; 
-	// 		}
-	// 		$i++; 
-	// 	}
-
-	// 	$mapboxRequestUrl = "https://api.mapbox.com/directions/v5/mapbox/walking/".$coordinatesString."?steps=true&access_token=pk.eyJ1IjoiZW1pbGllZGFubmVuYmVyZyIsImEiOiJjaXhmOTB6ZnowMDAwMnVzaDVkcnpsY2M1In0.33yDwUq670jHD8flKjzqxg"; 
-
-	// 	$curl = curl_init();
-		
-	// 	curl_setopt_array($curl, array(
-	//     	CURLOPT_RETURNTRANSFER => 1,
-	//     	CURLOPT_URL => $mapboxRequestUrl
-	// 	));
-		
-	// 	$response = curl_exec($curl); 
-	// 	curl_close($curl);
-	// 	print_r($response); //send me off	
-	// }
 
 	public function getLandmarks($walkName) {
 		$walkName .= '.txt'; 
