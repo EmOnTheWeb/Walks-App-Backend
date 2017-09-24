@@ -31,7 +31,7 @@ class Gpxfiles extends CI_Controller {
 
 		//build coordinates string for api 
 		$coordinatesString=''; 
-
+	
 		$i=0; 
 		foreach($coordinates as $coordinate) {
 			$coordinatesString .= $coordinate['lon'].','.$coordinate['lat']; 
@@ -52,7 +52,13 @@ class Gpxfiles extends CI_Controller {
 		
 		$response = curl_exec($curl); 
 		curl_close($curl);
-		print_r($response); //send me off	
+
+		$response_array = array(
+			'turn-by-turn' => $response,
+			'waypoint-coordinates' => $coordinatesString
+		); 
+
+		print_r(json_encode($response_array)); //send me off	
 	}
 
 	public function getLandmarks($walkName) {
