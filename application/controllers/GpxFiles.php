@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header('Content-Type: application/json');
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Gpxfiles extends CI_Controller {
@@ -66,6 +67,6 @@ class Gpxfiles extends CI_Controller {
 		$filepath = "./landmark_descriptions/".$walkName; 
 		$fileContents = file_get_contents($filepath); 
 
-		print_r($fileContents); 	
+		print_r(json_encode($fileContents)); 	
 	}
 }
