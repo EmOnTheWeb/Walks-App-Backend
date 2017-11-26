@@ -69,4 +69,17 @@ class Gpxfiles extends CI_Controller {
 
 		print_r(json_encode($fileContents)); 	
 	}
+
+	public function getWaypointImages($waypointFilename) {
+		$iterator = new FilesystemIterator("./landmark_descriptions/images");
+		$imgPathList = array();
+		foreach($iterator as $entry) {
+			if($entry->getFilename() !== '.DS_Store') {
+				if(strpos($entry->getFilename(), $waypointFilename) !== false) {
+	        		$imgPathList[] = $entry->getPathname();
+	        	}
+			}
+		}
+		print_r(json_encode($imgPathList)); 
+	} 
 }
