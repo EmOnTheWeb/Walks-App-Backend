@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="http://www.geoplaner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<rte>
+<name>Blackfriars to barbican</name>
+<rtept lat="51.51108" lon="-0.10288">
+<ele>3</ele>
+<name>WP01-A</name>
+</rtept>
+<rtept lat="51.51219" lon="-0.102">
+<ele>8.3</ele>
+<name>WP02-B</name>
+</rtept>
+<rtept lat="51.51312" lon="-0.10106">
+<ele>12.7</ele>
+<name>WP03-C</name>
+</rtept>
+<rtept lat="51.51353" lon="-0.09994">
+<ele>14.8</ele>
+<name>WP04-D</name>
+</rtept>
+<rtept lat="51.51582" lon="-0.10047">
+<ele>17.2</ele>
+<name>WP05-E</name>
+</rtept>
+<rtept lat="51.51688" lon="-0.09863">
+<ele>18</ele>
+<name>WP06-F</name>
+</rtept>
+<rtept lat="51.52017" lon="-0.09748">
+<ele>19.6</ele>
+<name>WP07-G</name>
+</rtept>
+<rtept lat="51.52056" lon="-0.09755">
+<ele>19</ele>
+<name>WP08-H</name>
+</rtept>
+</rte>
+</gpx>

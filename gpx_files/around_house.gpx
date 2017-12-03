@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="http://www.geoplaner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<rte>
+<name>Around house</name>
+<rtept lat="51.49608" lon="-0.11228">
+<ele>3.7</ele>
+<name>WP01-A</name>
+</rtept>
+<rtept lat="51.49647" lon="-0.11149">
+<ele>3.4</ele>
+<name>WP02-B</name>
+</rtept>
+<rtept lat="51.49684" lon="-0.11001">
+<ele>4.6</ele>
+<name>WP03-C</name>
+</rtept>
+<rtept lat="51.49744" lon="-0.10758">
+<ele>3.7</ele>
+<name>WP04-D</name>
+</rtept>
+<rtept lat="51.49822" lon="-0.10544">
+<ele>4.5</ele>
+<name>WP05-E</name>
+</rtept>
+<rtept lat="51.49846" lon="-0.10494">
+<ele>4.2</ele>
+<name>WP06-F</name>
+</rtept>
+</rte>
+</gpx>

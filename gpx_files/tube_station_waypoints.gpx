@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="http://www.geoplaner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<rte>
+<name>Tube Station Waypoints</name>
+<rtept lat="51.53216" lon="-0.16909">
+<ele>41.2</ele>
+<name>WP01-A</name>
+</rtept>
+<rtept lat="51.53293" lon="-0.17001">
+<ele>43.1</ele>
+<name>WP02-B</name>
+</rtept>
+<rtept lat="51.53378" lon="-0.17184">
+<ele>46</ele>
+<name>WP03-C</name>
+</rtept>
+<rtept lat="51.53425" lon="-0.17283">
+<ele>47.5</ele>
+<name>WP04-D</name>
+</rtept>
+<rtept lat="51.53445" lon="-0.174">
+<ele>49.6</ele>
+<name>WP05-E</name>
+</rtept>
+</rte>
+</gpx>

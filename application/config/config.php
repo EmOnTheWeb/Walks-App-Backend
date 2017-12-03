@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://api-walks.emiliedannenberg.co.uk/';
-//'http://localhost:8888/'
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -52,6 +52,7 @@ $config['index_page'] = '';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
+
 $config['uri_protocol']	= 'REQUEST_URI';
 
 /*

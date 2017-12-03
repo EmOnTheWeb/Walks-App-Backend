@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="http://www.geoplaner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<rte>
+<name>House to work</name>
+<rtept lat="51.49891" lon="-0.11207">
+<ele>3.3</ele>
+<name>WP01-A</name>
+</rtept>
+<rtept lat="51.50008" lon="-0.11141">
+<ele>4.5</ele>
+<name>WP02-B</name>
+</rtept>
+<rtept lat="51.50267" lon="-0.10865">
+<ele>3.3</ele>
+<name>WP03-C</name>
+</rtept>
+<rtept lat="51.50373" lon="-0.10495">
+<ele>3.7</ele>
+<name>WP04-D</name>
+</rtept>
+<rtept lat="51.50652" lon="-0.10449">
+<ele>5.8</ele>
+<name>WP05-E</name>
+</rtept>
+<rtept lat="51.50959" lon="-0.1043">
+<ele>0</ele>
+<name>WP06-F</name>
+</rtept>
+<rtept lat="51.51145" lon="-0.10459">
+<ele>8.5</ele>
+<name>WP07-G</name>
+</rtept>
+<rtept lat="51.51116" lon="-0.10655">
+<ele>5.4</ele>
+<name>WP08-H</name>
+</rtept>
+<rtept lat="51.51218" lon="-0.10686">
+<ele>6.4</ele>
+<name>WP09-I</name>
+</rtept>
+<rtept lat="51.51256" lon="-0.1068">
+<ele>7.3</ele>
+<name>WP10-J</name>
+</rtept>
+<rtept lat="51.51257" lon="-0.10628">
+<ele>7.3</ele>
+<name>WP11-K</name>
+</rtept>
+</rte>
+</gpx>
