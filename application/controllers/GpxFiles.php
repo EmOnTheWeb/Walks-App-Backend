@@ -11,14 +11,20 @@ class Gpxfiles extends CI_Controller {
 	}
 
 	public function listWalks() {
-		$iterator = new FilesystemIterator("./gpx_files");
-		$filelist = array();
-		foreach($iterator as $entry) {
-			if($entry->getFilename() !== '.DS_Store') {
-	        	$filelist[] = $entry->getFilename();
-			}
-		}
-		print_r(json_encode($filelist)); 
+		// $iterator = new FilesystemIterator("./gpx_files");
+		// $filelist = array();
+		// foreach($iterator as $entry) {
+		// 	if($entry->getFilename() !== '.DS_Store') {
+	 //        	$filelist[] = $entry->getFilename();
+		// 	}
+		// }
+
+		$this->load->database();
+		$this->db->select('name,image_url,description');
+        $this->db->from('walks');
+
+        $query = $this->db->get();
+    	print_r(json_encode($query->result())); 
 	}
 
 	public function getDirections($filename) {
