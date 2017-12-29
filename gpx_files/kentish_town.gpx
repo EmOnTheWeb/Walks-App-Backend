@@ -38,10 +38,6 @@
 <ele>30</ele>
 <name>WP10-J</name>
 </rtept>
-<rtept lat="51.54674" lon="-0.14446">
-<ele>30.4</ele>
-<name>WP11-K</name>
-</rtept>
 <rtept lat="51.54724" lon="-0.14602">
 <ele>32.2</ele>
 <name>WP12-L</name>
@@ -101,6 +97,10 @@
 <rtept lat="51.55298" lon="-0.13957">
 <ele>44.1</ele>
 <name>WP28</name>
+</rtept>
+<rtept lat="51.55018" lon="-0.14072">
+<ele>37.7</ele>
+<name>WP11-K</name>
 </rtept>
 </rte>
 </gpx>
