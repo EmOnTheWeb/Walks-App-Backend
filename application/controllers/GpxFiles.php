@@ -61,9 +61,11 @@ class Gpxfiles extends CI_Controller {
 	public function retrieveMapboxDirections($filename,$coordinatesString,$fileNumber = null) {  //from either cache or request
 
 		$this->load->driver('cache', array('adapter' => 'file', 'backup' => 'file'));
+		
+		$cache=json_decode($this->cache->get($filename.'_mbdirections')); 
 
-	 	if ( ! $mapboxDirections = $this->cache->get($filename.'_mbdirections')) {
-	        
+	 	if ($cache->message = "Not Found") {
+	      
 	        $mapboxRequestUrl = "https://api.mapbox.com/directions/v5/mapbox/walking/".$coordinatesString."?steps=true&access_token=pk.eyJ1IjoiZW1pbGllZGFubmVuYmVyZyIsImEiOiJjaXhmOTB6ZnowMDAwMnVzaDVkcnpsY2M1In0.33yDwUq670jHD8flKjzqxg"; 
 
 			$curl = curl_init();
@@ -74,12 +76,15 @@ class Gpxfiles extends CI_Controller {
 			));
 			
 			$mapboxDirections = curl_exec($curl); 
-		
+
 			curl_close($curl);
 
 		    // Save into the cache for 1 week 
 		    $this->cache->save($filename.'_mbdirections', $mapboxDirections,604800);
 
+		}
+		else {
+			$mapboxDirections=$cache; 
 		}
 
 		return $mapboxDirections; 
