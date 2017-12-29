@@ -47,8 +47,20 @@ class Gpxfiles extends CI_Controller {
 			}
 			$i++; 
 		}
+
+		$mapboxDirections = $this->retrieveMapboxDirections($filename,$coordinatesString); 
 	 	
-	 	$this->load->driver('cache', array('adapter' => 'file', 'backup' => 'file'));
+		$response_array = array(
+			'turn-by-turn' => $mapboxDirections,
+			'waypoint-coordinates' => $coordinatesString
+		); 
+
+		print_r(json_encode($response_array)); //send me off	
+	}
+
+	public function retrieveMapboxDirections($filename,$coordinatesString,$fileNumber = null) {  //from either cache or request
+
+		$this->load->driver('cache', array('adapter' => 'file', 'backup' => 'file'));
 
 	 	if ( ! $mapboxDirections = $this->cache->get($filename.'_mbdirections')) {
 	        
@@ -62,6 +74,7 @@ class Gpxfiles extends CI_Controller {
 			));
 			
 			$mapboxDirections = curl_exec($curl); 
+		
 			curl_close($curl);
 
 		    // Save into the cache for 1 week 
@@ -69,12 +82,7 @@ class Gpxfiles extends CI_Controller {
 
 		}
 
-		$response_array = array(
-			'turn-by-turn' => $mapboxDirections,
-			'waypoint-coordinates' => $coordinatesString
-		); 
-
-		print_r(json_encode($response_array)); //send me off	
+		return $mapboxDirections; 
 	}
 
 	public function getLandmarks($walkName) {
