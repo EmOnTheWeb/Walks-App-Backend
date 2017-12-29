@@ -6,6 +6,10 @@
 <ele>36.1</ele>
 <name>WP01-A</name>
 </rtept>
+<rtept lat="51.55018" lon="-0.14072">
+<ele>37.7</ele>
+<name>WP11-K</name>
+</rtept>
 <rtept lat="51.54809" lon="-0.14128">
 <ele>33.9</ele>
 <name>WP02-B</name>
@@ -97,10 +101,6 @@
 <rtept lat="51.55298" lon="-0.13957">
 <ele>44.1</ele>
 <name>WP28</name>
-</rtept>
-<rtept lat="51.55018" lon="-0.14072">
-<ele>37.7</ele>
-<name>WP11-K</name>
 </rtept>
 </rte>
 </gpx>
