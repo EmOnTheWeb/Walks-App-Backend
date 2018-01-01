@@ -2,109 +2,61 @@
 <gpx version="1.1" creator="http://www.geoplaner.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 <rte>
 <name>Kentish Town</name>
-<rtept lat="51.5504" lon="-0.1405">
-<ele>36.1</ele>
+<rtept lat="51.55039" lon="-0.14041">
+<ele>35.7</ele>
 <name>WP01-A</name>
 </rtept>
-<rtept lat="51.55018" lon="-0.14072">
-<ele>37.7</ele>
-<name>WP11-K</name>
-</rtept>
-<rtept lat="51.54809" lon="-0.14128">
-<ele>33.9</ele>
+<rtept lat="51.55039" lon="-0.14068">
+<ele>36.9</ele>
 <name>WP02-B</name>
 </rtept>
-<rtept lat="51.54890" lon="-0.14099">
-<ele>33.9</ele>
-<name>WP17-Q</name>
-</rtept>
-<rtept lat="51.54579" lon="-0.14152">
-<ele>30.6</ele>
+<rtept lat="51.5494" lon="-0.14086">
+<ele>36.9</ele>
 <name>WP03-C</name>
 </rtept>
-<rtept lat="51.54554" lon="-0.14155">
-<ele>29.8</ele>
+<rtept lat="51.54812" lon="-0.14126">
+<ele>33.9</ele>
 <name>WP04-D</name>
 </rtept>
-<rtept lat="51.54285" lon="-0.14188">
-<ele>26.6</ele>
+<rtept lat="51.54578" lon="-0.14166">
+<ele>30.1</ele>
+<name>WP05-E</name>
+</rtept>
+<rtept lat="51.54566" lon="-0.14161">
+<ele>29.7</ele>
 <name>WP06-F</name>
 </rtept>
-<rtept lat="51.54491" lon="-0.14172">
-<ele>29.2</ele>
+<rtept lat="51.54285" lon="-0.14184">
+<ele>26.7</ele>
 <name>WP07-G</name>
 </rtept>
-<rtept lat="51.54521" lon="-0.14168">
-<ele>28.8</ele>
+<rtept lat="51.54481" lon="-0.14157">
+<ele>28.5</ele>
 <name>WP08-H</name>
 </rtept>
-<rtept lat="51.54559" lon="-0.14267">
-<ele>28.9</ele>
+<rtept lat="51.54513" lon="-0.14164">
+<ele>28.5</ele>
 <name>WP09-I</name>
 </rtept>
-<rtept lat="51.54675" lon="-0.14392">
-<ele>30</ele>
+<rtept lat="51.54566" lon="-0.14183">
+<ele>29.7</ele>
 <name>WP10-J</name>
 </rtept>
-<rtept lat="51.54724" lon="-0.14602">
-<ele>32.2</ele>
+<rtept lat="51.54674" lon="-0.14388">
+<ele>29.9</ele>
+<name>WP11-K</name>
+</rtept>
+<rtept lat="51.54725" lon="-0.14583">
+<ele>31.7</ele>
 <name>WP12-L</name>
 </rtept>
-<rtept lat="51.54889" lon="-0.14615">
-<ele>34.4</ele>
+<rtept lat="51.54884" lon="-0.14613">
+<ele>34.5</ele>
 <name>WP13-M</name>
 </rtept>
-<rtept lat="51.54908" lon="-0.14588">
-<ele>33.8</ele>
+<rtept lat="51.54682" lon="-0.14347">
+<ele>29.8</ele>
 <name>WP14-N</name>
-</rtept>
-<rtept lat="51.54684" lon="-0.14343">
-<ele>29.9</ele>
-<name>WP15-O</name>
-</rtept>
-<rtept lat="51.54758" lon="-0.1421">
-<ele>32.6</ele>
-<name>WP16-P</name>
-</rtept>
-<rtept lat="51.54794" lon="-0.14121">
-<ele>33.7</ele>
-<name>WP18-R</name>
-</rtept>
-<rtept lat="51.54963" lon="-0.14081">
-<ele>36.2</ele>
-<name>WP20-T</name>
-</rtept>
-<rtept lat="51.55091" lon="-0.1406">
-<ele>37.3</ele>
-<name>WP21-U</name>
-</rtept>
-<rtept lat="51.55229" lon="-0.1418">
-<ele>38.9</ele>
-<name>WP22-V</name>
-</rtept>
-<rtept lat="51.55385" lon="-0.14355">
-<ele>39.8</ele>
-<name>WP23-W</name>
-</rtept>
-<rtept lat="51.55584" lon="-0.14491">
-<ele>44.3</ele>
-<name>WP24-X</name>
-</rtept>
-<rtept lat="51.55663" lon="-0.14269">
-<ele>46.3</ele>
-<name>WP25-Y</name>
-</rtept>
-<rtept lat="51.55591" lon="-0.14157">
-<ele>44.4</ele>
-<name>WP26-Z</name>
-</rtept>
-<rtept lat="51.5552" lon="-0.1399">
-<ele>48.4</ele>
-<name>WP27</name>
-</rtept>
-<rtept lat="51.55298" lon="-0.13957">
-<ele>44.1</ele>
-<name>WP28</name>
 </rtept>
 </rte>
 </gpx>
