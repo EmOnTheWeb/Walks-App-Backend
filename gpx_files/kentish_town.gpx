@@ -26,6 +26,10 @@
 <ele>29.7</ele>
 <name>WP06-F</name>
 </rtept>
+<rtept lat="51.5434" lon="-0.14174">
+<ele>27</ele>
+<name>WP01-A</name>
+</rtept>
 <rtept lat="51.54285" lon="-0.14184">
 <ele>26.7</ele>
 <name>WP07-G</name>
