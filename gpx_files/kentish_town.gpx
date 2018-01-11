@@ -22,22 +22,6 @@
 <ele>30.1</ele>
 <name>WP05-E</name>
 </rtept>
-<rtept lat="51.54566" lon="-0.14161">
-<ele>29.7</ele>
-<name>WP06-F</name>
-</rtept>
-<rtept lat="51.54285" lon="-0.14184">
-<ele>26.7</ele>
-<name>WP07-G</name>
-</rtept>
-<rtept lat="51.54481" lon="-0.14157">
-<ele>28.5</ele>
-<name>WP08-H</name>
-</rtept>
-<rtept lat="51.54513" lon="-0.14164">
-<ele>28.5</ele>
-<name>WP09-I</name>
-</rtept>
 <rtept lat="51.54566" lon="-0.14183">
 <ele>29.7</ele>
 <name>WP10-J</name>
@@ -57,6 +41,38 @@
 <rtept lat="51.54682" lon="-0.14347">
 <ele>29.8</ele>
 <name>WP14-N</name>
+</rtept>
+<rtept lat="51.55097" lon="-0.14061">
+<ele>37.6</ele>
+<name>WP04-0</name>
+</rtept>
+<rtept lat="51.55229" lon="-0.1418">
+<ele>38.9</ele>
+<name>WP01-A</name>
+</rtept>
+<rtept lat="51.55427" lon="-0.14398">
+<ele>40.3</ele>
+<name>WP02-B</name>
+</rtept>
+<rtept lat="51.55509" lon="-0.14">
+<ele>48.2</ele>
+<name>WP11-K</name>
+</rtept>
+<rtept lat="51.55298" lon="-0.14094">
+<ele>48.2</ele>
+<name>WP11-K</name>
+</rtept>
+<rtept lat="51.55213" lon="-0.14016">
+<ele>48.2</ele>
+<name>WP11-K</name>
+</rtept>
+<rtept lat="51.55297" lon="-0.13956">
+<ele>44</ele>
+<name>WP06-F</name>
+</rtept>
+<rtept lat="51.55297" lon="-0.13956">
+<ele>44</ele>
+<name>WP06-F</name>
 </rtept>
 </rte>
 </gpx>
